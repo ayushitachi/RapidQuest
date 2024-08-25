@@ -41,7 +41,7 @@ const CustomerDistributionChart = () => {
   }> = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
       const { customers } = payload[0].payload;
-      const total = data.reduce((sum, entry) => sum + entry[customers], 0);
+      const total = data.reduce((sum, entry) => sum + entry["customers"], 0);
       const percentage = ((customers / total) * 100).toFixed(2);
       return (
         <div

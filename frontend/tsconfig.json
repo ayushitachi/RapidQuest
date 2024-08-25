@@ -17,5 +17,6 @@
     },
     "strict": false,
     "noImplicitAny": false,
+    "strictNullChecks": false
   }
 }
